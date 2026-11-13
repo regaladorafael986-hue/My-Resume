@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rafael Regalado — Full-stack web developer</title>
+  <meta name="description" content="Rafael Regalado is a full-stack web developer building complete web applications with JavaScript, Node.js and PostgreSQL. Ask Jarvis, the AI assistant, about the work.">
+  <meta property="og:title" content="Rafael Regalado — Full-stack web developer">
+  <meta property="og:description" content="Full-stack web applications, from the database and REST API to the interface.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c1220" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%231d3461'/%3E%3Ctext x='16' y='21' font-size='13' font-weight='700' text-anchor='middle' fill='%23e3a65d' font-family='Georgia,serif'%3ERR%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="/assets/rafael-regalado-800.jpg" imagesrcset="/assets/rafael-regalado-480.jpg 480w, /assets/rafael-regalado-800.jpg 800w" imagesizes="(max-width: 760px) 260px, 420px">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/jarvis/jarvis.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/jarvis/jarvis.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="monogram" aria-hidden="true">RR</span>
+        <span data-field="name">Rafael Regalado</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span data-field="role">Full-stack web developer</span></p>
+          <h1><span class="hello">Hi, I'm</span> <span data-field="name">Rafael Regalado</span></h1>
+          <p class="lead" data-field="tagline"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+          <ul class="hero-stack" id="hero-stack" aria-label="Core stack"></ul>
+        </div>
+
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img
+              src="/assets/rafael-regalado-800.jpg"
+              srcset="/assets/rafael-regalado-480.jpg 480w, /assets/rafael-regalado-800.jpg 800w"
+              sizes="(max-width: 760px) 260px, 420px"
+              width="800" height="1067"
+              alt="Portrait of Rafael Regalado"
+              fetchpriority="high">
+          </div>
+          <button class="portrait-badge" type="button" data-jarvis-open>
+            <span class="jarvis-orb" aria-hidden="true"></span>
+            <span class="badge-text"><strong>Ask Jarvis</strong><small>AI assistant · knows my work</small></span>
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="section-head">
+          <p class="kicker">01</p>
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="prose">
+          <p data-field="summary"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="container split">
+        <div class="section-head">
+          <p class="kicker">02</p>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <ul class="chips" id="skills-list"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head inline">
+          <p class="kicker">03</p>
+          <h2 id="projects-title">Selected projects</h2>
+        </div>
+        <div class="project-grid" id="project-list"></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-card">
+        <p class="kicker">04</p>
+        <h2 id="contact-title">Let's build something together</h2>
+        <p data-field="contactBlurb"></p>
+        <ul class="contact-links" id="contact-links"></ul>
+        <button class="btn btn-ghost" type="button" data-jarvis-open>Or ask Jarvis a question</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> <span data-field="name">Rafael Regalado</span></span>
+      <span>Hand-built with HTML, CSS &amp; vanilla JS · Jarvis runs on Claude</span>
+    </div>
+  </footer>
+
+  <noscript><p class="container">Turn on JavaScript to see the full portfolio content.</p></noscript>
+</body>
+</html>

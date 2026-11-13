@@ -1,0 +1,62 @@
+{
+  "name": "Rafael Regalado",
+  "pronouns": "",
+  "photo": "/assets/rafael-regalado-800.jpg",
+  "role": "Full-stack web developer",
+  "tagline": "I build complete web applications, from the database and REST API to the interface people use.",
+  "location": "",
+  "summary": "I'm a full-stack developer who works mostly with JavaScript, Node.js and PostgreSQL. I like building systems end to end: data models, secure APIs, payment and email integrations, and fast, accessible front ends without heavy frameworks.",
+  "contactBlurb": "Want to work together or ask about a project? Reach me through the links below, or ask Jarvis anything about my work.",
+  "email": "",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/regaladorafael986-hue"
+    }
+  ],
+  "skills": [
+    "JavaScript (ES modules)",
+    "HTML5 & CSS3",
+    "Node.js",
+    "Express",
+    "REST API design",
+    "PostgreSQL",
+    "Prisma ORM",
+    "Authentication & RBAC",
+    "Payment integrations",
+    "Vercel"
+  ],
+  "projects": [
+    {
+      "name": "StayEase — Hotel Booking System",
+      "description": "A booking and operations platform for a single hotel. Guests browse rooms, check live availability, and book and pay online or at the hotel. Receptionists run the front desk, and administrators manage rooms, reservations, payments, promotions, reviews and reports.",
+      "tech": [
+        "HTML/CSS",
+        "Vanilla JS",
+        "Node.js",
+        "Express 5",
+        "PostgreSQL (Neon)",
+        "Prisma",
+        "Chart.js"
+      ],
+      "highlights": [
+        "Race-safe availability: row locks inside a transaction, verified by tests where 8 simultaneous requests for 2 rooms yield exactly 2 bookings",
+        "Server-side sessions, CSRF tokens, role- and permission-based access, Helmet CSP, rate limiting and zod validation",
+        "PayMongo payments (GCash, Maya, cards), Brevo email and Cloudinary images, with a signed-webhook payment simulator for development",
+        "Admin KPI dashboard and 8 reports with PDF and Excel export"
+      ],
+      "url": "https://github.com/regaladorafael986-hue/hotel-booking"
+    }
+  ],
+  "experience": [],
+  "education": [],
+  "jarvis": {
+    "greeting": "Hi, I'm Jarvis. Ask me anything about this portfolio: projects, skills, or how to get in touch.",
+    "suggestions": [
+      "What has been built here?",
+      "How does StayEase prevent double bookings?",
+      "Which technologies are used most?",
+      "How can I get in touch?"
+    ]
+  }
+}
