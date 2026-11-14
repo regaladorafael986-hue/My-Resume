@@ -11,7 +11,7 @@
   <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c1220" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%231d3461'/%3E%3Ctext x='16' y='21' font-size='13' font-weight='700' text-anchor='middle' fill='%23e3a65d' font-family='Georgia,serif'%3ERR%3C/text%3E%3C/svg%3E">
-  <link rel="preload" as="image" href="/assets/rafael-regalado-cutout-1086.webp" imagesrcset="/assets/rafael-regalado-cutout-640.webp 640w, /assets/rafael-regalado-cutout-1086.webp 1086w" imagesizes="(max-width: 760px) 90vw, 700px">
+  <link rel="preload" as="image" href="/assets/rafael-regalado-cutout-640.webp" imagesrcset="/assets/rafael-regalado-cutout-640.webp 640w, /assets/rafael-regalado-cutout-1086.webp 1086w" imagesizes="(max-width: 760px) 60vw, 360px">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/jarvis/jarvis.css">
   <script src="/js/main.js" defer></script>
@@ -37,45 +37,35 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-stage">
-        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span data-field="role">Full-stack web developer</span><span class="eyebrow-rule" aria-hidden="true"></span></p>
+      <div class="container hero-layout">
+        <div class="hero-photo">
+          <img
+            class="hero-figure"
+            src="/assets/rafael-regalado-cutout-640.webp"
+            srcset="/assets/rafael-regalado-cutout-640.webp 640w, /assets/rafael-regalado-cutout-1086.webp 1086w"
+            sizes="(max-width: 760px) 60vw, 360px"
+            width="1086" height="1304"
+            alt="Portrait of Rafael Regalado"
+            fetchpriority="high">
+        </div>
 
-        <!-- Name behind the photo -->
-        <h1 class="hero-name">
-          <span class="name-first" data-name-part="first">Rafael</span>
-          <span class="name-last" data-name-part="last">Regalado</span>
-        </h1>
-
-        <img
-          class="hero-figure"
-          src="/assets/rafael-regalado-cutout-1086.webp"
-          srcset="/assets/rafael-regalado-cutout-640.webp 640w, /assets/rafael-regalado-cutout-1086.webp 1086w"
-          sizes="(max-width: 760px) 90vw, 700px"
-          width="1086" height="1304"
-          alt="Portrait of Rafael Regalado"
-          fetchpriority="high">
-
-        <!-- Same name in front of the photo, as an outline -->
-        <p class="hero-name hero-name--outline" aria-hidden="true">
-          <span class="name-first" data-name-part="first">Rafael</span>
-          <span class="name-last" data-name-part="last">Regalado</span>
-        </p>
-
-        <button class="portrait-badge" type="button" data-jarvis-open>
-          <span class="jarvis-orb" aria-hidden="true"></span>
-          <span class="badge-text"><strong>Ask Jarvis</strong><small>Rafael's personal AI assistant</small></span>
-        </button>
-      </div>
-
-      <div class="container hero-foot">
-        <div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span data-field="role">Full-stack web developer</span></p>
+          <h1 class="hero-name">
+            <span class="name-first" data-name-part="first">Rafael</span>
+            <span class="name-last" data-name-part="last">Regalado</span>
+          </h1>
           <p class="lead" data-field="tagline"></p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">View my work</a>
             <a class="btn" href="#contact">Get in touch</a>
           </div>
+          <button class="portrait-badge" type="button" data-jarvis-open>
+            <span class="jarvis-orb" aria-hidden="true"></span>
+            <span class="badge-text"><strong>Ask Jarvis</strong><small>Rafael's personal AI assistant</small></span>
+          </button>
+          <ul class="hero-stack" id="hero-stack" aria-label="Core stack"></ul>
         </div>
-        <ul class="hero-stack" id="hero-stack" aria-label="Core stack"></ul>
       </div>
     </section>
 
