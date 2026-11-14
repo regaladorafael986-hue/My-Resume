@@ -22,8 +22,14 @@
     const stack = document.getElementById("hero-stack");
     if (stack) stack.replaceChildren(...(p.skills || []).slice(2, 7).map((s) => el("li", null, s)));
 
-    const photo = document.querySelector(".portrait-frame img");
-    if (photo && p.name) photo.alt = `Portrait of ${p.name}`;
+    // The big hero name is split into first name and the rest (two layered lines).
+    if (p.name) {
+      const [first, ...rest] = p.name.trim().split(/\s+/);
+      document.querySelectorAll('[data-name-part="first"]').forEach((n) => (n.textContent = first));
+      document.querySelectorAll('[data-name-part="last"]').forEach((n) => (n.textContent = rest.join(" ")));
+      const photo = document.querySelector(".hero-figure");
+      if (photo) photo.alt = `Portrait of ${p.name}`;
+    }
 
     const projects = document.getElementById("project-list");
     projects.replaceChildren(

@@ -51,12 +51,12 @@
   "experience": [],
   "education": [],
   "jarvis": {
-    "greeting": "Hi, I'm Jarvis. Ask me anything about this portfolio: projects, skills, or how to get in touch.",
+    "greeting": "Hi, I'm Jarvis, Rafael's personal AI assistant. Ask me anything about Rafael: background, skills, projects, or how to get in touch.",
     "suggestions": [
-      "What has been built here?",
-      "How does StayEase prevent double bookings?",
-      "Which technologies are used most?",
-      "How can I get in touch?"
+      "Who is Rafael?",
+      "What has Rafael built?",
+      "What is Rafael good at?",
+      "How can I contact Rafael?"
     ]
   }
 }
